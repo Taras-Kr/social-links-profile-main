@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-semi-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+  padding: 40px;
+}
+
+.div-list {
+  width: 304px;
+}
+.div-header {
+  gap: 4px;
+}
+
+body {
+  color: #ffffff;
+  background: #141414;
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    article {
+      background: #1f1f1f;
+      border-radius: 12px;
+      /* background: #ffff; */
+      img {
+        border-radius: 50%;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        h2 {
+          font-size: 24px;
+          line-height: 150%;
+        }
+        h3 {
+          line-height: 150%;
+          font-size: 14px;
+          color: #c4f82a;
+        }
+        p {
+          line-height: 150%;
+          font-size: 14px;
+        }
+        span {
+          line-height: 150%;
+          font-size: 14px;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: inherit;
+        font-size: 14px;
+        line-height: 150%;
+        li {
+          border-radius: 8px;
+          background-color: #333333;
+          padding: 12px;
+          text-align: center;
+        }
+        li:hover {
+          background-color: #c4f82a;
+          color: #1f1f1f;
+          transition: 500ms ease-in-out;
+          cursor: url("../assets/images/handcursor.svg"), pointer;
+        }
+        a:hover {
+          cursor: url("../assets/images/handcursor.svg"), pointer;
+        }
+      }
+    }
+  }
+}
